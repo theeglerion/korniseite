@@ -1,0 +1,108 @@
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #c2bdc1;
+    font-family: Titillium, Arial, Helvetica, sans-serif;
+}
+
+table {
+    padding-top: 2rem;
+    width: fit-content;
+    text-align: left;
+    border: 0;
+}
+
+td {
+    color: black;
+    padding-top: 1rem;
+    vertical-align: text-bottom;
+    padding-bottom: 10px;
+}
+
+@font-face {
+    font-family: Titillium;
+    src: url(Titillium-Regular.otf);
+}
+
+header {
+    background-color: #e0dfdf;
+    padding-bottom: 1%;
+}
+
+h1 {
+    margin: auto;
+    margin-left: 31%;
+    font-size: 6rem;
+    font-weight: lighter;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 0;
+    margin-left: 31%;
+    text-align: left;
+    font-weight: lighter;
+}
+
+img {
+    float: left;
+    display: inline;
+    max-width: 100%;
+    height: auto;
+}
+
+.kontakt {
+    padding-top: 2rem;
+    margin: auto;
+    width: auto;
+    display: inline;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    padding: 0;
+    width: fit-content;
+    height: 80%;
+}
+
+.container img {
+    max-height: 100%;
+}
+
+html {
+    height: 100%;
+    padding: 0;
+}
+
+.box {
+    float: left;
+
+}
+
+.box,
+.kontakt {
+    display: block;
+}
+
+.space {
+    padding-left: 2rem;
+}
+
+#impressum {
+    font-size: x-small;
+    margin-top: 3rem;
+    bottom: 0;
+}
+
+footer {
+    display: inline-block;
+    bottom: 0;
+    position: fixed;
+}
+
+h3 {
+    margin: 0;
+}
