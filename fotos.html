@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="DE">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Konrad Schreier</title>
+    <!--meta http-equiv="refresh" content="100"-->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <h1>Konrad Schreier</h1>
+            <h2>Puppenspieler, Synchronsprecher, Schauspieler</h2>
+        </div>
+    </header>
+
+    <div id="nav"></div>
+    <script>
+        $(function () {
+            $("#nav").load("nav.html");
+        });
+    </script>
+
+    <div class="row">
+        <div class="main">
+            <div class="center">
+                <h3>Fotos</h3>
+                <div id="pl"></div>
+                <script>
+                    $(function () {
+                        $("#pl").load("placeholder.html");
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div id="impressum"></div>
+    <script>
+        $(function () {
+            $("#impressum").load("footer.html");
+        });
+    </script>
+    </div>
+</body>
+
+</html>

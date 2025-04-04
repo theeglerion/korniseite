@@ -1,111 +1,134 @@
-body {
-    font-kerning: normal;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #c2bdc1;
-    font-family: Titillium, Arial, Helvetica, sans-serif;
-}
-
-table {
-    padding-top: 2rem;
-    width: fit-content;
-    text-align: left;
-    border: 0;
-}
-
-td {
-    color: black;
-    padding-top: 1rem;
-    vertical-align: text-bottom;
-    padding-bottom: 10px;
-}
-
-@font-face {
-    font-family: Titillium;
-    src: url(Titillium-Regular.otf);
-}
-
-header {
-    background-color: #e0dfdf;
-    padding-bottom: 1%;
-    width: 100%;
-    position: static;
-
+* {
+    box-sizing: border-box;
 }
 
 h1 {
-    text-align: left;
-    margin: 0;
-    margin-left: 30%;
-    font-size: 6rem;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: lighter;
+    font-size: 5em;
     text-transform: uppercase;
 }
 
 h2 {
-    text-align: left;
-    margin-left: 30%;
-    margin-top: 0;
+    margin-top: 0;  
+    margin-bottom: 0;
     font-weight: lighter;
-}
-
-img {
-    float: left;
-    display: inline;
-    max-width: 100%;
-    height: auto;
-}
-
-.kontakt {
-    padding-top: 2rem;
-    margin: auto;
-    width: auto;
-    display: inline;
-    text-align: left;
-}
-
-.container {
-    display: flex;
-    padding: 0;
-    width: 30%;
-    height: 80%;
-}
-
-.container img {
-    max-height: 100%;
-}
-
-html {
-    height: 100%;
-    padding: 0;
-}
-
-.box {
-    float: left;
-}
-
-.box,
-.kontakt {
-    display: block;
-}
-
-.space {
-    padding-left: 2rem;
-}
-
-#impressum {
-    font-size: x-small;
-    margin-top: 3rem;
-    bottom: 0;
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-
 }
 
 h3 {
     margin: 0;
+    text-align: justify;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 40%;
+}
+
+header {
+    background-color: #e0dfdf;
+    width: 100%;
+}
+
+@font-face {
+    src: url(Titillium-Regular.otf);
+    font-family: Titillium;
+}
+
+#impressum {
+    padding: 2px;
+    font-size: small;
+    text-align: center;
+    margin-top: auto;
+}
+
+.main {
+    flex: 70%;
+    padding: 20px;
+}
+
+#nav {
+    background-color: #ffff;
+    width: 100%;
+}
+
+#nav a {
+    display: block;
+    padding: 14px 20px;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav a:hover {
+    box-shadow: 15px 15px 50px #000000 inset;
+    background-color: #c2bdc1; 
+}
+
+#nav li {    
+    margin: auto;
+    width: auto;
+    height: auto; 
+    text-align: center;
+}
+
+#nav ul {     
+    display: flex;
+    margin: auto;    
+    margin-top: 0;
+    width: 80%;
+    list-style: none;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #c2bdc1;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Titillium, Arial, Helvetica, sans-serif;
+    font-kerning: normal;    
+    display: flex;
+    flex-direction: column;
+}
+
+.side {
+    flex: 30%;
+}
+
+.side img{
+    max-height: 90%;
+}
+
+html {
+    padding: 0;
+    height: 100%;
+}
+
+.row{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+table {
+    text-align: justify;
 }
