@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Konrad Schreier</title>
+    <base href="https://konradschreier.de">
     <!--meta http-equiv="refresh" content="100"-->
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
@@ -20,6 +21,7 @@
 
     <div id="nav"></div>
     <script>
+        console.log(window.location.host);
         $(function () {
             $("#nav").load("nav.html");
         });
