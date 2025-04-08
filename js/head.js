@@ -1,6 +1,6 @@
 (function () {
     const head = document.head;
-    
+
     // Dynamisch Stylesheets hinzufügen
     var linkStyles1 = document.createElement('link');
     linkStyles1.rel = 'stylesheet';
@@ -30,6 +30,7 @@
         $(function () {
             $('#nav').load('nav.html');
             $('#impressum').load('footer.html');
+            $('#pl').load('placeholder.html');
         });
     };
 
