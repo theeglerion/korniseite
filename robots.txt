@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Disallow: /restricted/
+
+Sitemap: https://konradschreier.de/sitemap.xml
