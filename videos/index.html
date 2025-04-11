@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="DE">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
-    <title>Konrad Schreier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="https://konradschreier.de">
-    <!--meta http-equiv="refresh" content="100"-->
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <title>Konrad Schreier</title>
+
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Konrad Schreier – Puppenspieler, Synchronsprecher und Schauspieler aus Berlin. Projekte &amp; Profil.">
+    <meta name="keywords"
+        content="Kunst, Konrad Schreier, Künstlerportfolio, moderne Kunst, Schauspiel, Theater, Puppenspiel, Musik, Ernst Busch, Puppentheater">
+    <meta property="og:title" content="Konrad Schreier – Portfolio">
+    <meta property="og:description"
+        content="Konrad Schreier – Puppenspieler, Synchronsprecher und Schauspieler aus Berlin. Projekte &amp; Profil.">
+    <meta property="og:image" content="images/portfolio-cover.jpg">
+    <meta property="og:url" content="https://konradschreier.de">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Konrad Schreier – Puppenspieler, Synchronsprecher und Schauspieler aus Berlin. Projekte &amp; Profil.">
+    <meta name="twitter:description" content="Erfahren Sie mehr über Kunst und Projekte von Konrad Schreier.">
+    <meta name="twitter:image" content="images/portfolio-cover.jpg">
+
+    <script src="js/head.js" defer></script>
 </head>
 
 <body>
@@ -18,34 +35,61 @@
             <h2>Puppenspieler, Synchronsprecher, Schauspieler</h2>
         </div>
     </header>
-
     <div id="nav"></div>
-    <script>
-        $(function () {
-            $("#nav").load("nav.html");
-        });
-    </script>
-
     <div class="row">
         <div class="main">
-            <div class="center">
-                <h3>Videos</h3>
-                <div id="pl"></div>
-                <script>
-                    $(function () {
-                        $("#pl").load("placeholder.html");
-                    });
-                </script>
+            <div class="videos">
+                <h3 style="width: 100%; margin-left: 2rem;">Videos</h3>
+                <!-- Video 1 -->
+                <div class=" video-wrapper" id="video-1" data-video-id="804MrawcO4A">
+                    <div class="video-placeholder" onclick="loadYouTubeVideo('video-1')"
+                        style="background-image: url('images/tn_video1.jpg');">
+                        <div class="video-button">▶</div>
+                        <div class="video-overlay">Mit Klick erklärst du dich einverstanden, dass Daten an YouTube
+                            übertragen werden.</div>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="video-wrapper" id="video-2" data-video-id="CtJ1ZwpMeGo">
+                    <div class="video-placeholder" onclick="loadYouTubeVideo('video-2')"
+                        style="background-image: url('images/tn_video2.jpg');">
+                        <div class="video-button">▶</div>
+                        <div class="video-overlay">Mit Klick erklärst du dich einverstanden, dass Daten an YouTube
+                            übertragen werden.</div>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="video-wrapper" id="video-3" data-video-id="kYtrtfHc8P0">
+                    <div class="video-placeholder" onclick="loadYouTubeVideo('video-3')"
+                        style="background-image: url('images/tn_video3.jpg');">
+                        <div class="video-button">▶</div>
+                        <div class="video-overlay">Mit Klick erklärst du dich einverstanden, dass Daten an YouTube
+                            übertragen werden.</div>
+                    </div>
+                </div>
+                <!-- Video 4 -->
+                <div class="video-wrapper" id="video-4" data-video-id="ZuxSgnxZCpU">
+                    <div class="video-placeholder" onclick="loadYouTubeVideo('video-4')"
+                        style="background-image: url('images/tn_video4.jpg');">
+                        <div class="video-button">▶</div>
+                        <div class="video-overlay">Mit Klick erklärst du dich einverstanden, dass Daten an YouTube
+                            übertragen werden.</div>
+                    </div>
+                </div>
+                <!-- Video 5 -->
+                <div class="video-wrapper" id="video-5" data-video-id="phHOLYlEPg0">
+                    <div class="video-placeholder" onclick="loadYouTubeVideo('video-5')"
+                        style="background-image: url('images/tn_video5.jpg');">
+                        <div class="video-button">▶</div>
+                        <div class="video-overlay">Mit Klick erklärst du dich einverstanden, dass Daten an YouTube
+                            übertragen werden.</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="impressum"></div>
-    <script>
-        $(function () {
-            $("#impressum").load("footer.html");
-        });
-    </script>
+        <div id="impressum"></div>
+
     </div>
 </body>
 

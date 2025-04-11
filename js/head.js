@@ -26,9 +26,12 @@
 
     // Lazy-Loading nur, wenn jQuery gebraucht wird
     jquery.onload = function () {
-        // Skript für Nav und Impressum laden, nachdem jQuery verfügbar ist
         $(function () {
-            $('#nav').load('nav.html');
+            $("#nav").load("nav.html", function() {
+                $('.nav-toggle').on('click', function() {
+                    $('.nav-left').toggleClass('show');
+                });
+            });
             $('#impressum').load('footer.html');
             $('#pl').load('placeholder.html');
         });
@@ -37,5 +40,24 @@
     // jQuery erst hinzufügen, wenn wirklich gebraucht
     document.addEventListener('DOMContentLoaded', function () {
         head.appendChild(jquery);
-    });
+    });   
+    
+    // Funktion zum Umschalten der Navigation
+    window.toggleNav = function() {
+        $('.nav-left').toggleClass('show');
+    }
+
 })();
+
+// YouTube Lazy-Loader
+function loadYouTubeVideo(containerId) {
+    const wrapper = document.getElementById(containerId);
+    const videoId = wrapper.getAttribute('data-video-id');
+    wrapper.innerHTML = `
+    <iframe width="100%" height="100%" 
+      src="https://www.youtube-nocookie.com/embed/${videoId}?rel=0" 
+      frameborder="0" allowfullscreen 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+  `;
+}   
