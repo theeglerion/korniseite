@@ -10,6 +10,10 @@ h1 {
     text-transform: uppercase;
 }
 
+h1, h2, h3, #nav {
+    font-family: Vollkorn, Georgia, Times, 'Times New Roman', serif;
+}
+
 h2 {
     margin-top: 0;  
     margin-bottom: 0;
@@ -22,10 +26,6 @@ h3 {
     text-align: justify;
     text-transform: uppercase;
     line-height: 2;
-}
-
-h1, h2, h3, #nav {
-    font-family: Vollkorn, Georgia, Times, 'Times New Roman', serif;
 }
 
 table {
@@ -57,11 +57,13 @@ header {
 @font-face {
     font-family: Titillium;
     src: url(fonts/titillium/Titillium-Regular.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Vollkorn;
     src: url(fonts/vollkorn/Vollkorn-Regular.ttf);
+    font-display: swap;
 }
 
 #impressum {
@@ -170,6 +172,7 @@ body {
     font-kerning: normal;    
     display: flex;
     flex-direction: column;
+    color: #202123;
 }
 
 .row {
@@ -199,6 +202,12 @@ html {
     height: 100%;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .videos {
     display: flex;
     flex-wrap: wrap;
@@ -207,12 +216,6 @@ html {
     padding-bottom: 50px;
     width: 60%;
     margin: auto;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 @media screen and (max-width: 768px) {
