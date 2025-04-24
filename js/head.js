@@ -27,7 +27,7 @@
     // Lazy-Loading nur, wenn jQuery gebraucht wird
     jquery.onload = function () {
         $(function () {
-            $("#nav").load("nav.html", function() {
+            $("#nav").load("../nav.html", function() {
                 $('.nav-toggle').on('click', function() {
                     $('.nav-left').toggleClass('show');
                 });

@@ -48,7 +48,8 @@ table {
     margin-top: 0;
     padding: 20px;
     padding-bottom: 50px;
-    width: 40%;
+    width: fit-content;
+    max-width: 90%;
 }
 
 td {
@@ -61,7 +62,6 @@ header {
     width: 100%;
     padding-top: 50px;
     display: block;
-    height: 230px;
 }
 
 @font-face {
