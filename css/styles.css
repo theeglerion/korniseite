@@ -229,6 +229,20 @@ html, body {
     margin: auto;
 }
 
+.fotos {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 0;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.fotos img{
+    height: 40vh;
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5em;
@@ -354,4 +368,11 @@ html, body {
         font-size: x-small;
         order: 2;
     }
+
+    .fotos {
+        height: auto;
+        width: 90vw;
+
+    }
+
 }
